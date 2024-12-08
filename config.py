@@ -15,16 +15,16 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("24779895"))
+API_HASH = getenv("24ca02336ac39cb748e2946de19814e3")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("7651069480:AAEJOhBH1RxoCUl-L4HH9NhNdl8INxuKwQY")
 
 # Database to save your chats and stats... Get MongoDB:-  https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/mongodb#4.-youll-see-a-deploy-cloud-database-option.-please-select-shared-hosting-under-free-plan-here
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://ztx1430:<db_password>@cluster0.pagia.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", None)
 
 # SUDO USERS
 SUDO_USER = list(
-    map(int, getenv("SUDO_USER", "").split())
+    map(int, getenv("7757912959", "").split())
 )  # Input type must be interger
